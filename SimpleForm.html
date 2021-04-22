@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
     <title> My form</title>
     <style>
         table,td{
             border: 1px solid black;
         }
+        
     </style>
 </head>
-<body>
+<body style="padding: 100px  550px;">
+    <p ><b>Abdullah form </b></p>
     <table>
-        <form action="">
+        <form action ="">
         <tr >
             <td>
                 E-Mail
             </td>
             <td colspan="6"> 
-                <input type="email" name="User Eamil" >
+                <input type="email" name="email" placeholder="E-mail" required  >
             </td>
         </tr>
         <tr>
@@ -24,7 +26,7 @@
                 Name
             </td>
             <td>
-                <input type="text" name="User Name" >
+                <input type="text" name="User Name" placeholder="Name" required >
             </td>
         </tr>
         <tr>
@@ -32,7 +34,7 @@
                 Country
             </td>
             <td>
-                <SELECT NAME=“Country_Name”>
+                <SELECT NAME=“Country_Name” required>
                     <OPTION>--Select Value --
                     <OPTION>Afghanistan
                     <OPTION>Pakistan
@@ -44,7 +46,7 @@
                     <OPTION>Russia
                     <OPTION>USA
                     </SELECT>
-                    &nbsp; &nbsp;City <SELECT NAME=“City_Name”>
+                    &nbsp; &nbsp;City <SELECT NAME=“City_Name” required>
                      <OPTION>--Select Option --
                         <OPTION>Islamabad
                         <OPTION>Kabul
@@ -63,7 +65,7 @@
                Answer
             </td>
             <td>
-                <input type="radio" name="color" value="Red">Red &nbsp; 
+                <input type="radio" name="color" value="Red" >Red &nbsp; 
                 <input type="radio" name="color" value="Green">Green &nbsp; 
                 <input type="radio" name="color" value="Blue">Blue
             </td>
@@ -113,9 +115,9 @@
             
         </td>
        
-            <td  style="text-align: center;">
-                <input type="button" value="Save " name="Save"> &nbsp; 
-                <input type="reset" value="Reset" name="Reset">
+            <td>
+                <button type="submit"> Save</button> &nbsp; 
+                <button type="reset"> Reset</button>
                     </td>
                 
         </tr>
@@ -124,6 +126,7 @@
        
     </form>
     </table>
+
     
 </body>
 </html>
